@@ -1,0 +1,38 @@
+.card-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-item {
+  width: 170px;
+  height: 92px;
+  display: block;
+}
+
+.card-item + .card-item {
+  margin-left: 30px;
+}
+
+.card-href {
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+
+  transition: color 250ms var(--timing-funcshion), border 250ms var(--timing-funcshion);
+}
+
+.card-svg {
+  fill: currentColor;
+}
+
+.card-href:hover,
+.card-href:focus {
+  border: var(--acent-text-color) 1px solid;
+  color: var(--acent-text-color);
+}

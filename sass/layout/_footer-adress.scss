@@ -1,0 +1,19 @@
+.adress-li {
+  text-decoration: none;
+  color: var(--header-text-color);
+   width: 233px;
+    display: inline-block;
+}
+
+address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  opacity: 0.6;
+}

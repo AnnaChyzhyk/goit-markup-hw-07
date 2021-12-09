@@ -1,4 +1,26 @@
-body{
-    background-color: rgb(153, 140, 140);
-    color: rgb(133, 74, 141);
-}
+@import './utils/variables';
+@import './utils/visuallyhidden';
+
+@import './base/resed';
+@import './base/common';
+
+
+@import './components/container';
+@import './components/logo';
+@import './components/footer-conteiner';
+
+@import './layout/header';
+@import './layout/modalWindow';
+@import './layout/forma';
+@import './layout/hero';
+@import './layout/feature';
+@import './layout/doing-section';
+@import './layout/comand';
+@import './layout/card-section';
+@import './layout/footer-adress';
+@import './layout/footer-link';
+@import './layout/forma-footer';
+
+
+@import './layout/portfolio-button';
+@import './layout/portfolio-card';

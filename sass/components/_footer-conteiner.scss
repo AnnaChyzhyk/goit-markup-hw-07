@@ -1,0 +1,38 @@
+
+footer {
+  color: #fff;
+}
+
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: var(--footer-background);
+  padding: 60px 0;
+}
+.footer-conteiner {
+  display: flex;
+}
+
+.text-studio {
+  color: var(--background-bootun);
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrapper {
+  margin-right: 70px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
