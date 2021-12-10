@@ -1,16 +1,15 @@
 
-footer {
-  color: #fff;
+.section{
+  &.footer__section {
+    background-color: var(--footer-background);
+    padding: 60px 0;
+  }
 }
 
-.footer {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: var(--footer-background);
-  padding: 60px 0;
-}
-.footer-conteiner {
-  display: flex;
+.container{
+  &.footer__conteiner {
+    display: flex;
+  }
 }
 
 .text-studio {
