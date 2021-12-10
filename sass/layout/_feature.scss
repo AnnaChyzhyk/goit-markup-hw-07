@@ -1,9 +1,9 @@
-.section-box {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-top: 94px;
+.section{
+  &.section__box {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
 }
-
 
 .subtitle-list {
   margin-bottom: 10px;
