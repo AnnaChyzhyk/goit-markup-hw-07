@@ -7,8 +7,17 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  &.logo__footer {
+  display: block;
+  margin-bottom: 20px;
+  } 
 }
 
-.web {
+.logo__web {
   color: var(--acent-text-color);
+}
+
+.logo__studio {
+  color: var(--background-bootun);
 }

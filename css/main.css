@@ -117,8 +117,17 @@ address {
   letter-spacing: 0.03em;
 }
 
-.web {
+.logo.logo__footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo__web {
   color: var(--acent-text-color);
+}
+
+.logo__studio {
+  color: var(--background-bootun);
 }
 
 .title {
@@ -144,16 +153,12 @@ address {
   display: flex;
 }
 
-.text-studio {
-  color: var(--background-bootun);
-}
-
 .footer-box {
   display: flex;
   flex-direction: column;
 }
 
-.footer-wrapper {
+.footer__wrapper {
   margin-right: 70px;
 }
 
@@ -171,39 +176,29 @@ address {
   display: flex;
 }
 
-.nav-flex {
+.main-nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav {
+.main-nav__list {
   display: flex;
 }
 
-.li-site-nav:not(:last-child) {
-  margin-right: 50px;
+.main-nav__list.main-nav__link.current {
+  color: var(--acent-text-color);
 }
 
-.li-site-nav {
+.main-nav__item {
   display: inline-block;
   position: relative;
 }
 
-.auht-nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.li-site-nav:not(:last-child) {
+.main-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.decoration.current {
-  color: var(--acent-text-color);
-}
-
-.site-nav .link {
+.main-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -215,7 +210,25 @@ address {
   transition: color 250ms var(--timing-funcshion);
 }
 
-.auht-nav .nav {
+.main-nav__link:hover, .main-nav__link:focus {
+  color: var(--acent-text-color);
+}
+
+.decoration.current {
+  color: var(--acent-text-color);
+}
+
+.main-nav__auht-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.main-nav__auht-list .main-nav__auht-item + .main-nav__auht-item {
+  margin-left: 50px;
+}
+
+.main-nav__auht-link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -228,30 +241,16 @@ address {
   transition: color 250ms var(--timing-funcshion);
 }
 
-.link-icon {
+.main-nav__auht-link:hover, .main-nav__auht-link:focus {
+  color: var(--acent-text-color);
+}
+
+.main-nav__auht-icon {
   display: flex;
   margin-right: 10px;
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.auht-nav .li-auht + .li-auht {
-  margin-left: 50px;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--acent-text-color);
-}
-
-.auht-nav .nav:hover,
-.auht-nav .nav:focus {
-  color: var(--acent-text-color);
-}
-
-.site-nav .link.current {
-  color: var(--acent-text-color);
 }
 
 .backdrop {
