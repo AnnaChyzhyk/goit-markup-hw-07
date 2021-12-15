@@ -11,23 +11,18 @@
     url(../images/hero.jpg);
 }
 
-.title-text {
+.main-title__text {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
   text-align: center;
 
+  @include font($fw:900, $fs:44px, $lh:1.36, $ls:0.036em );
   color: var(--header-text-color);
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero-buton {
+.main-title__button {
   display: block;
   border: 1px solid var(--acent-text-colo);
   margin: 0 auto;
@@ -40,9 +35,6 @@
   background-color: var(--acent-text-color);
   color: var(--header-text-color);
 
+  @include font($fw:700, $fs:16px, $lh:1.2, $ls:0.06em );
   cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.06em;
 }
