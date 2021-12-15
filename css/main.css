@@ -500,28 +500,19 @@ address {
   padding-bottom: 0px;
 }
 
-.subtitle-list {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.box-item {
+.tabs__list {
   display: flex;
 }
 
-.box-li {
+.tabs__item {
   width: 270px;
 }
 
-.box-li:not(:last-child) {
+.tabs__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.box-conteiner {
+.tabs__conteiner {
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
@@ -531,13 +522,31 @@ address {
   justify-content: center;
 }
 
-.box-icon {
+.tabs__icon {
   width: 70px;
   height: 70px;
 }
 
+.tabs__text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.tabs__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .text {
   color: var(--secondary-text-color);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
