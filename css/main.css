@@ -842,18 +842,15 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-.portfolio-button {
+.button {
   display: flex;
   flex-wrap: wrap;
-}
-
-.portfolio-button {
   margin-bottom: 54px;
   justify-content: center;
   text-align: center;
 }
 
-.button-text {
+.button__text {
   border: 1px solid var(--button-border);
   border-radius: 4px;
   padding: 6px 22px;
@@ -868,15 +865,14 @@ address {
   transition: color 250ms var(--timing-funcshion), background-color 250ms var(--timing-funcshion);
 }
 
-.button-wrapper:not(:last-child) {
-  margin-right: 8px;
-}
-
-.button-text:hover,
-.button-text:focus {
+.button__text:hover, .button__text:focus {
   background-color: var(--acent-text-color);
   color: var(--header-text-color);
   cursor: pointer;
+}
+
+.button__wrapper:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-flex {
