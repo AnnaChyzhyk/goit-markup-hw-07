@@ -1,0 +1,8 @@
+.footer__title {
+  @include font( $ls:0.03em ); 
+  text-transform: uppercase;
+  color: var(--background-bootun);
+  
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
