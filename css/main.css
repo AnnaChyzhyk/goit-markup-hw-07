@@ -594,19 +594,19 @@ address {
   background-color: var(--section-color);
 }
 
-.box-comand {
+.card__body {
   display: flex;
 }
 
-.comand-li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.comand-li {
+.card__title {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 3px 0px 1px rgba(0, 0, 0, 0.12);
 }
 
-.comand-div {
+.card__title:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card__subtitle {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -615,37 +615,38 @@ address {
   background-color: var(--header-text-color);
 }
 
-.subtitle-name {
-  margin-bottom: 10px;
+.card__subtitle-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
-.profeshion-text {
+.card__subtitle-text {
   color: var(--secondary-text-color);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
-.comand-list {
+.card__subtitle-list {
   display: flex;
   justify-content: center;
 }
 
-.comand-item {
+.card__subtitle-item {
   width: 44px;
   height: 44px;
 }
 
-.comand-item + .comand-item {
+.card__subtitle-item + .card__subtitle-item {
   margin-left: 10px;
 }
 
-.comad-href {
+.card__subtitle-href {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -657,16 +658,15 @@ address {
   transition: color 250ms var(--timing-funcshion), background-color 250ms var(--timing-funcshion);
 }
 
-.comand-svg {
+.card__subtitle-href:hover, .card__subtitle-href:focus {
+  color: var(--header-text-color);
+  background-color: var(--acent-text-color);
+}
+
+.card__subtitle-svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.comad-href:hover,
-.comad-href:focus {
-  color: var(--header-text-color);
-  background-color: var(--acent-text-color);
 }
 
 .card-list {
