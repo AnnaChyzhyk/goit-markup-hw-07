@@ -600,7 +600,7 @@ address {
   background-color: var(--section-color);
 }
 
-.card__body {
+.card__body-comand {
   display: flex;
 }
 
@@ -622,7 +622,7 @@ address {
 }
 
 .card__subtitle-name {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;

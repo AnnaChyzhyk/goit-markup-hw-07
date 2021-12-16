@@ -4,7 +4,7 @@
   }
 } 
 
-.card__body {
+.card__body-comand {
   display: flex;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .card__subtitle-name {
-   @include font($fs:16px, $lh:1.18, $ls:0.03em ); 
+   @include font($fw:600,$fs:16px, $lh:1.18, $ls:0.03em ); 
   margin-bottom: 10px;
 }
 
