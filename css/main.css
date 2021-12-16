@@ -875,14 +875,14 @@ address {
   margin-right: 8px;
 }
 
-.portfolio-flex {
+.card__body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.li-img {
+.card__title-form {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
@@ -890,48 +890,21 @@ address {
   transition: box-shadow 250ms var(--timing-funcshion);
 }
 
-.li-img a {
+.card__title-form a {
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
-.li-img:hover,
-.li-img:focus {
+.card__title-form:hover, .card__title-form:focus {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.product {
+.card__aside-portfolio {
   position: relative;
   overflow: hidden;
 }
 
-.text-copy {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: var(--header-text-color);
-}
-
-.text-copy {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 322px;
-  height: 170px;
-  opacity: 0;
-  transform: translate(-50%, -50%) translateY(100%);
-  transition: opacity 250ms var(--timing-funcshion), transform 250ms var(--timing-funcshion);
-}
-
-.li-img:hover .text-copy,
-.li-img:focus .text-copy {
-  opacity: 1;
-  transform: translateY(0) translate(-50%, -50%);
-}
-
-.product::before {
+.card__aside-portfolio::before {
   display: inline-block;
   content: '';
   position: absolute;
@@ -943,19 +916,50 @@ address {
   transition: transform 250ms var(--timing-funcshion);
 }
 
-.li-img:hover .product::before,
-.li-img:focus .product::before {
+.card__copy {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+}
+
+.card__aside-copy {
+  display: inline-block;
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+  top: 50%;
+  left: 50%;
+  width: 322px;
+  height: 170px;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateY(100%);
+  transition: opacity 250ms var(--timing-funcshion), transform 250ms var(--timing-funcshion);
+}
+
+.card__title-form:hover .card__aside-copy,
+.card__title-form:focus .card__aside-copy {
+  opacity: 1;
+  transform: translateY(0) translate(-50%, -50%);
+}
+
+.card__title-form:hover .card__aside-portfolio::before,
+.card__title-form:focus .card__aside-portfolio::before {
   opacity: 1;
   transform: translateY(0);
 }
 
-.link-border {
+.card__border {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.portfolio-title {
+.card__title-name {
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 18px;
@@ -963,7 +967,8 @@ address {
   letter-spacing: 0.06em;
 }
 
-.text-portfolio {
+.card__copy {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
