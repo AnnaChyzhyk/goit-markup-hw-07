@@ -780,7 +780,11 @@ address {
   margin-left: 94px;
 }
 
-.input-sub {
+.sub-group__form {
+  display: flex;
+}
+
+.sub-group__input {
   width: 358px;
   margin: 0;
   padding-left: 15px;
@@ -797,21 +801,17 @@ address {
   letter-spacing: 0.03em;
 }
 
-.input-sub:-webkit-autofill {
+.sub-group__input:-webkit-autofill {
   -webkit-text-fill-color: #fff;
   -webkit-background-clip: text;
   background-clip: text;
 }
 
-.input-sub::placeholder {
+.sub-group__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sub-form {
-  display: flex;
-}
-
-.button-sub {
+.sub-group__button {
   position: relative;
   width: 200px;
   height: 50px;
@@ -820,17 +820,17 @@ address {
   padding-bottom: 10px;
   display: block;
   border: 1px solid var(--acent-text-color);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--background-bootun);
-  background-color: var(--acent-text-color);
-  letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--background-bootun);
+  background-color: var(--acent-text-color);
 }
 
-.cvg-sub {
+.sub-group__svg {
   width: 24px;
   height: 24px;
   position: absolute;
